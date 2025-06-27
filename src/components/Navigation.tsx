@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
+import Icon from "@/components/ui/icon";
 
 const Navigation = () => {
   const location = useLocation();
@@ -34,6 +35,16 @@ const Navigation = () => {
               </Link>
             ))}
           </div>
+
+          <a
+            href="tel:+78001234567"
+            className="flex items-center space-x-2 text-blue-600 hover:text-blue-700 transition-colors duration-200"
+          >
+            <Icon name="Phone" size={20} />
+            <span className="hidden sm:block font-medium">
+              8 (800) 123-45-67
+            </span>
+          </a>
         </div>
       </div>
     </nav>
