@@ -41,6 +41,76 @@ const About = () => {
             </div>
           </div>
 
+          {/* Office and Warehouse Photos */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 my-12">
+            <div className="relative rounded-lg overflow-hidden shadow-lg">
+              <img
+                src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=400&fit=crop"
+                alt="Офис компании Ash-Cargo"
+                className="w-full h-80 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+              <div className="absolute bottom-4 left-4 text-white">
+                <h3 className="text-xl font-semibold">Наш офис</h3>
+                <p className="text-sm">Современное рабочее пространство</p>
+              </div>
+            </div>
+            <div className="relative rounded-lg overflow-hidden shadow-lg">
+              <img
+                src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=400&fit=crop"
+                alt="Складские помещения"
+                className="w-full h-80 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+              <div className="absolute bottom-4 left-4 text-white">
+                <h3 className="text-xl font-semibold">Складские помещения</h3>
+                <p className="text-sm">Высокотехнологичное хранение</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Team at Work Section */}
+          <div className="bg-gray-50 p-8 rounded-lg mb-12">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+              Команда за работой
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="relative rounded-lg overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=250&fit=crop"
+                  alt="Команда в офисе"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                <div className="absolute bottom-2 left-2 text-white text-sm font-medium">
+                  Планерка в офисе
+                </div>
+              </div>
+              <div className="relative rounded-lg overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=300&h=250&fit=crop"
+                  alt="Работа на складе"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                <div className="absolute bottom-2 left-2 text-white text-sm font-medium">
+                  Контроль на складе
+                </div>
+              </div>
+              <div className="relative rounded-lg overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=300&h=250&fit=crop"
+                  alt="Логистические процессы"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                <div className="absolute bottom-2 left-2 text-white text-sm font-medium">
+                  Логистическое планирование
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="bg-gray-50 p-8 rounded-lg">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
               Почему мы лидеры отрасли

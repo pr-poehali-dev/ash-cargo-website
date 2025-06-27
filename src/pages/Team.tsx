@@ -66,6 +66,26 @@ const Team = () => {
           </p>
         </div>
 
+        {/* Office Background Section */}
+        <div className="relative mb-16 rounded-xl overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&h=400&fit=crop"
+            alt="Офис компании"
+            className="w-full h-64 object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30"></div>
+          <div className="absolute inset-0 flex items-center">
+            <div className="max-w-2xl mx-auto text-center text-white px-6">
+              <h2 className="text-2xl font-bold mb-2">
+                Работаем как единая команда
+              </h2>
+              <p className="text-lg opacity-90">
+                Каждый специалист вносит свой вклад в общий успех
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {team.map((member, index) => (
             <div
@@ -89,6 +109,59 @@ const Team = () => {
               <p className="text-gray-600 text-sm">{member.description}</p>
             </div>
           ))}
+        </div>
+
+        {/* Workplace Photos Section */}
+        <div className="mt-16">
+          <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+            Рабочие моменты
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="relative rounded-lg overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=300&h=200&fit=crop"
+                alt="Команда на складе"
+                className="w-full h-40 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+              <div className="absolute bottom-2 left-2 text-white text-xs font-medium">
+                Работа на складе
+              </div>
+            </div>
+            <div className="relative rounded-lg overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=300&h=200&fit=crop"
+                alt="Планирование маршрутов"
+                className="w-full h-40 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+              <div className="absolute bottom-2 left-2 text-white text-xs font-medium">
+                Планирование маршрутов
+              </div>
+            </div>
+            <div className="relative rounded-lg overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=300&h=200&fit=crop"
+                alt="Контроль качества"
+                className="w-full h-40 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+              <div className="absolute bottom-2 left-2 text-white text-xs font-medium">
+                Контроль качества
+              </div>
+            </div>
+            <div className="relative rounded-lg overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=200&fit=crop"
+                alt="Командная работа"
+                className="w-full h-40 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+              <div className="absolute bottom-2 left-2 text-white text-xs font-medium">
+                Командная работа
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="text-center mt-16">

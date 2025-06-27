@@ -111,6 +111,33 @@ const Contacts = () => {
             </div>
           </div>
 
+          {/* Office and Warehouse Photos */}
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="relative rounded-lg overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=200&fit=crop"
+                alt="Входная группа офиса"
+                className="w-full h-32 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+              <div className="absolute bottom-2 left-2 text-white text-sm font-medium">
+                Вход в офис
+              </div>
+            </div>
+            <div className="relative rounded-lg overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?w=400&h=200&fit=crop"
+                alt="Складские терминалы"
+                className="w-full h-32 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+              <div className="absolute bottom-2 left-2 text-white text-sm font-medium">
+                Складские терминалы
+              </div>
+            </div>
+          </div>
+        </div>
+
           {/* Contact Form */}
           <div>
             <h2 className="text-2xl font-bold text-gray-900 mb-8">

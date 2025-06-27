@@ -86,6 +86,54 @@ const Services = () => {
           </p>
         </div>
 
+        {/* Services Images Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          <div className="relative rounded-lg overflow-hidden shadow-lg">
+            <img
+              src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=300&h=200&fit=crop"
+              alt="Грузовые перевозки"
+              className="w-full h-48 object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+            <div className="absolute bottom-3 left-3 text-white">
+              <h3 className="text-sm font-semibold">Грузовые перевозки</h3>
+            </div>
+          </div>
+          <div className="relative rounded-lg overflow-hidden shadow-lg">
+            <img
+              src="https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?w=300&h=200&fit=crop"
+              alt="Складское хранение"
+              className="w-full h-48 object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+            <div className="absolute bottom-3 left-3 text-white">
+              <h3 className="text-sm font-semibold">Складское хранение</h3>
+            </div>
+          </div>
+          <div className="relative rounded-lg overflow-hidden shadow-lg">
+            <img
+              src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=200&fit=crop"
+              alt="Логистические решения"
+              className="w-full h-48 object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+            <div className="absolute bottom-3 left-3 text-white">
+              <h3 className="text-sm font-semibold">Логистические решения</h3>
+            </div>
+          </div>
+          <div className="relative rounded-lg overflow-hidden shadow-lg">
+            <img
+              src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=300&h=200&fit=crop"
+              alt="Международные перевозки"
+              className="w-full h-48 object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+            <div className="absolute bottom-3 left-3 text-white">
+              <h3 className="text-sm font-semibold">Международные перевозки</h3>
+            </div>
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div
