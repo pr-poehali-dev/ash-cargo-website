@@ -125,6 +125,165 @@ const Services = () => {
           ))}
         </div>
 
+        <div className="mt-24 mb-16">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Прайс-лист
+            </h2>
+            <p className="text-lg text-gray-600">
+              Стоимость основных транспортно-логистических услуг
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <div className="bg-white border rounded-xl overflow-hidden">
+              <div className="bg-blue-50 px-6 py-4 border-b">
+                <h3 className="text-lg font-semibold text-gray-900 flex items-center">
+                  <Icon name="Truck" size={20} className="text-blue-600 mr-2" />
+                  Автомобильные перевозки
+                </h3>
+              </div>
+              <div className="p-6 space-y-4">
+                <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                  <span className="text-gray-700">Газель (до 1,5 т)</span>
+                  <span className="font-medium text-gray-900">от 25 ₽/км</span>
+                </div>
+                <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                  <span className="text-gray-700">
+                    Фура тентованная (до 20 т)
+                  </span>
+                  <span className="font-medium text-gray-900">от 45 ₽/км</span>
+                </div>
+                <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                  <span className="text-gray-700">Рефрижератор (до 20 т)</span>
+                  <span className="font-medium text-gray-900">от 55 ₽/км</span>
+                </div>
+                <div className="flex justify-between items-center py-2">
+                  <span className="text-gray-700">Негабаритные грузы</span>
+                  <span className="font-medium text-gray-900">от 70 ₽/км</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border rounded-xl overflow-hidden">
+              <div className="bg-green-50 px-6 py-4 border-b">
+                <h3 className="text-lg font-semibold text-gray-900 flex items-center">
+                  <Icon
+                    name="Clock"
+                    size={20}
+                    className="text-green-600 mr-2"
+                  />
+                  Экспресс-доставка
+                </h3>
+              </div>
+              <div className="p-6 space-y-4">
+                <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                  <span className="text-gray-700">
+                    В пределах города (до 24ч)
+                  </span>
+                  <span className="font-medium text-gray-900">от 1 500 ₽</span>
+                </div>
+                <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                  <span className="text-gray-700">Межгород (до 48ч)</span>
+                  <span className="font-medium text-gray-900">от 3 000 ₽</span>
+                </div>
+                <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                  <span className="text-gray-700">Сопровождение груза</span>
+                  <span className="font-medium text-gray-900">+2 000 ₽</span>
+                </div>
+                <div className="flex justify-between items-center py-2">
+                  <span className="text-gray-700">Работа в выходные</span>
+                  <span className="font-medium text-gray-900">+50%</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border rounded-xl overflow-hidden">
+              <div className="bg-purple-50 px-6 py-4 border-b">
+                <h3 className="text-lg font-semibold text-gray-900 flex items-center">
+                  <Icon
+                    name="Package"
+                    size={20}
+                    className="text-purple-600 mr-2"
+                  />
+                  Складские услуги
+                </h3>
+              </div>
+              <div className="p-6 space-y-4">
+                <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                  <span className="text-gray-700">Хранение (за м²/сутки)</span>
+                  <span className="font-medium text-gray-900">от 15 ₽</span>
+                </div>
+                <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                  <span className="text-gray-700">
+                    Погрузо-разгрузочные работы
+                  </span>
+                  <span className="font-medium text-gray-900">
+                    от 800 ₽/час
+                  </span>
+                </div>
+                <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                  <span className="text-gray-700">Упаковка и маркировка</span>
+                  <span className="font-medium text-gray-900">
+                    от 50 ₽/место
+                  </span>
+                </div>
+                <div className="flex justify-between items-center py-2">
+                  <span className="text-gray-700">Инвентаризация</span>
+                  <span className="font-medium text-gray-900">
+                    от 5 ₽/место
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border rounded-xl overflow-hidden">
+              <div className="bg-orange-50 px-6 py-4 border-b">
+                <h3 className="text-lg font-semibold text-gray-900 flex items-center">
+                  <Icon
+                    name="Globe"
+                    size={20}
+                    className="text-orange-600 mr-2"
+                  />
+                  Дополнительные услуги
+                </h3>
+              </div>
+              <div className="p-6 space-y-4">
+                <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                  <span className="text-gray-700">Таможенное оформление</span>
+                  <span className="font-medium text-gray-900">от 5 000 ₽</span>
+                </div>
+                <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                  <span className="text-gray-700">Страхование груза</span>
+                  <span className="font-medium text-gray-900">0,1-0,3%</span>
+                </div>
+                <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                  <span className="text-gray-700">Консультация логиста</span>
+                  <span className="font-medium text-gray-900">2 000 ₽/час</span>
+                </div>
+                <div className="flex justify-between items-center py-2">
+                  <span className="text-gray-700">GPS-мониторинг</span>
+                  <span className="font-medium text-gray-900">300 ₽/сутки</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-8">
+            <p className="text-sm text-gray-500 mb-4">
+              * Цены указаны без учета НДС. Точная стоимость рассчитывается
+              индивидуально.
+            </p>
+            <a
+              href="/contacts"
+              className="bg-blue-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200 inline-flex items-center"
+            >
+              <Icon name="Calculator" size={16} className="mr-2" />
+              Рассчитать стоимость
+            </a>
+          </div>
+        </div>
+
         <div className="text-center mt-16">
           <div className="bg-gray-50 rounded-xl p-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
